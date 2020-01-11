@@ -95,7 +95,7 @@ try{
 	} out.println("</select>");
 	
 	rs7=stmt7.executeQuery(sql7);
-	out.println("<select style=\"position: absolute; top: 25%; left: 50%; height: 8%;\" id=\"seccion\" name=\"seccion\">		<option selected>--Selecciona una sección--</option>");
+	out.println("<select style=\"position: absolute; top: 25%; left: 50%; height: 8%;\" id=\"seccion\" name=\"seccion\">		<option selected>--Selecciona una secciÃ³n--</option>");
 	while(rs7.next()){
 		seccion=rs7.getString("Descripcion");
 		out.println("<option value=\""+ rs7.getInt("seccion_id")+"\">"+seccion+"</option>");
@@ -132,15 +132,15 @@ finally
 	<div style="position: absolute; top: 20%; left: 30%; font-size: 2em;">Rama</div>
 	
 <!--Seccion-->
-	<div style="position: absolute; top: 20%; left: 50%; font-size: 2em;">Sección</div>
+	<div style="position: absolute; top: 20%; left: 50%; font-size: 2em;">SecciÃ³n</div>
 	
 <!--Cancha-->
 	<div style="position: absolute; top: 45%; left: 10%; font-size: 2em;">Cancha</div>
 	
 	<!--Parsear la hora o introducir opciones-->
 <!--Hora-->
-	<div style="position: absolute; top: 45%; left: 30%; font-size: 2em;">Día y Hora</div>
-	<input type="datetime-local" style="position: absolute; top: 50%; left: 30%; height: 8%;" title="*El formato está basado en 12 horas con distinción a.m./p.m.">
+	<div style="position: absolute; top: 45%; left: 30%; font-size: 2em;">DÃ­a y Hora</div>
+	<input type="datetime-local" style="position: absolute; top: 50%; left: 30%; height: 8%;" title="*El formato estÃ¡ basado en 12 horas con distinciÃ³n a.m./p.m.">
 
 <!--Contrincantes-->
 <!--Local-->
